@@ -1,0 +1,142 @@
+.popover__wrapper {
+  position: absolute;
+  left: 55%;
+  top: 55%;
+  width: 400px;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+  z-index: 30;
+}
+.popover__content {
+  /* overflow-y: auto; */
+  max-height: 95vh;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.12);
+
+  border-radius: 3px;
+  width: 100%;
+  padding-inline: 0.5rem;
+}
+.label__heading {
+  border-bottom: 1px solid #ccc;
+  height: 25px;
+}
+.label__input > input {
+  width: 100% !important;
+  -webkit-appearance: none;
+  background-color: #fafbfc;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #dfe1e6;
+  box-sizing: border-box;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 12px;
+  outline: none;
+  padding: 8px 12px;
+  transition-duration: 85ms;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+}
+.color__palette > span {
+  height: 32px;
+  box-sizing: border-box;
+  min-width: 52px;
+  width: auto;
+  padding: 0px 12px;
+  display: block;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 28px;
+  float: left;
+  margin: 0px 4px 4px 0px;
+}
+.icon__sm {
+  height: 20px;
+  width: 20px;
+}
+.create__btn {
+  background-color: #0079bf;
+  height: 2rem;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+.create__btn:hover {
+  background-color: #026aa7;
+  cursor: pointer;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.h1,
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  .h1,
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+.h2,
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .h2,
+  h2 {
+    font-size: 2rem;
+  }
+}
+.h3,
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  .h3,
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+.h4,
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  .h4,
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+.h5,
+h5 {
+  font-size: 1.25rem;
+}
+.h6,
+h6 {
+  font-size: 1rem;
+}
+.disabled__color {
+  pointer-events: none;
+  opacity: 0.4;
+}

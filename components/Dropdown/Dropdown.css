@@ -1,0 +1,16 @@
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: var(--drop-down-color);
+  border-radius: 3px;
+  min-height: 40px;
+  min-width: 80px;
+  width: fit-content;
+  height: fit-content;
+  max-width: 250px;
+  max-height: 390px;
+  overflow-y: auto;
+  z-index: 10;
+  padding-inline: 15px;
+}

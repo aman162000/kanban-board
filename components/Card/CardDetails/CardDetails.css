@@ -1,0 +1,90 @@
+.card__action__btn > button {
+  background-color: var(--task-hover);
+  color: var(--text-color);
+  border: none;
+  font-size: 15px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  margin-top: 8px;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition-duration: 85ms;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.card__action__btn > button:hover {
+  background-color: var(--task-hover);
+  border: none;
+}
+.icon__sm > svg {
+  height: 15px;
+  width: 15px;
+}
+.icon__md {
+  height: 20px;
+  width: 20px;
+}
+.card__label {
+  display: flex;
+  justify-content: space-between;
+}
+.label__color > span {
+  height: 32px;
+  box-sizing: border-box;
+  min-width: 40px;
+  width: auto;
+  padding: 0px 12px;
+  display: block;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 32px;
+  float: left;
+  margin: 0px 4px 4px 0px;
+}
+.label__color > span:hover {
+  cursor: pointer;
+}
+.progress-bar {
+  background-color: #61bd4f !important;
+}
+.task__editable {
+  width: 30%;
+}
+.task__list {
+  min-height: 20px;
+  height: auto;
+  padding-top: 6px;
+  padding-inline: 0.5rem;
+  border-radius: 2px;
+}
+.task__list:hover {
+  background-color: var(--task-hover);
+}
+
+.task__checkbox {
+  height: 18px !important;
+  width: 18px !important;
+  cursor: pointer;
+}
+.task__list > div > p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}

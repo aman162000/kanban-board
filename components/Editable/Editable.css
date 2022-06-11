@@ -1,0 +1,66 @@
+.editable {
+  height: auto;
+}
+.editable > p {
+  width: 90%;
+  display: flex;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: ease-in-out 200ms;
+  margin-inline: auto;
+}
+.editable > p:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.editable__input {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0.5rem;
+  gap: 10px;
+}
+.editable__input > textarea {
+  width: 98% !important;
+  -webkit-appearance: none;
+  background-color: #fafbfc;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #dfe1e6;
+  box-sizing: border-box;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 12px;
+  outline: none;
+  padding: 8px 12px;
+  transition-duration: 85ms;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+}
+.editable__input > textarea:focus {
+  border: none;
+  outline: none;
+}
+.btn__control {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-inline: 0.1rem;
+}
+.btn__control > button {
+  background-color: #0079bf;
+  height: 2rem;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+.btn__control > button:hover {
+  background-color: #026aa7;
+  cursor: pointer;
+}
+.close:hover {
+  cursor: pointer;
+}
