@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "../components/Navbar/Navbar";
 import Board from "../components/Board/Board";
@@ -24,7 +23,6 @@ function App() {
     defaultDark ? "dark" : "light"
   );
 
-  console.log(theme);
   const switchTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -54,15 +52,17 @@ function App() {
     return tempData;
   };
 
-  const dragCardInSameBoard = (source, destination) => {
-    let tempData = [...data];
-    const index = tempData.findIndex(
-      (item) => item.id.toString() === source.droppableId
-    );
-    let [removedCard] = tempData[index].card.splice(source.index, 1);
-    tempData[index].card.splice(destination.index, 0, removedCard);
-    return tempData;
-  };
+  // const dragCardInSameBoard = (source, destination) => {
+  //   let tempData = Array.from(data);
+  //   console.log("Data", tempData);
+  //   const index = tempData.findIndex(
+  //     (item) => item.id.toString() === source.droppableId
+  //   );
+  //   console.log(tempData[index], index);
+  //   let [removedCard] = tempData[index].card.splice(source.index, 1);
+  //   tempData[index].card.splice(destination.index, 0, removedCard);
+  //   setData(tempData);
+  // };
 
   const addCard = (title, bid) => {
     const index = data.findIndex((item) => item.id === bid);
