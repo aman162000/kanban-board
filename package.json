@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-extension": "yarn build && cp manifest.json dist/"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
